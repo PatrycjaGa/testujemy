@@ -22,6 +22,6 @@ public class Exercise4_1 {
         printArray(beforMmyArray);
         int[] afterArray = switchTable(beforMmyArray);
         Exercise4_1.printArray(afterArray);
-                
+
     }
 }
