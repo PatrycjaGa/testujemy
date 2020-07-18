@@ -3,12 +3,12 @@ package test;
 import org.w3c.dom.ls.LSOutput;
 
 public class Exercise9 {
-    public static void modulo(int parametr1, int paramter2){
+    public static void modulo(int divident, int divisor){
         int remainder =0;
-        if (parametr1 !=0 && paramter2 !=0){
-            remainder = parametr1 - paramter2*(parametr1/paramter2);
+        if (divident !=0 && divisor !=0){
+            remainder = divident - divisor*(divident/divisor);
     }
-        System.out.println("Reszta z dzielenia liczb " + parametr1 + " i " + paramter2 + " wynosi " + remainder);
+        System.out.println("Reszta z dzielenia liczb " + divident + " i " + divisor + " wynosi " + remainder);
     }
 
     public static void main(String[] args) {
