@@ -1,6 +1,6 @@
 package test.oop;
 
-public class SportCar extends Car{
+public class SportCar extends Car {
     public SportCar(int setNumber) {
         super(setNumber);
     }
@@ -10,3 +10,5 @@ public class SportCar extends Car{
     }
 
 }
+
+

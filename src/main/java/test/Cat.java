@@ -1,8 +1,15 @@
 package test;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Cat implements Animal{
 
     private String catSound;
+    private int age;
+
     public Cat(){
         this.catSound = "Meow";
     }
@@ -11,6 +18,13 @@ public class Cat implements Animal{
     this.catSound = ownSound;
     }
 
+//    public int getAge() {
+//        return age;
+//    }
+//
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
 
     @Override
     public String makeSound() {
