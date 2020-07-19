@@ -1,7 +1,11 @@
 package test.mz_1;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 //@AllArgsConstructor - odpowiada konstruktorowi ze wszystkimi parametrami
 public class Person{
     public static final Integer MAX_AGE = 130;
@@ -9,7 +13,14 @@ public class Person{
     private String name;
     private String surname;
     private int age = 18;
+    private Address address;
 
+    public Person(String name, String surname, int age, Address address) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.address = address;
+    }
 
     //konstruktor z parametrami
     public Person(){
@@ -48,6 +59,7 @@ public class Person{
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
+                ", address=" + address.toString() +
                 '}';
     }
 
