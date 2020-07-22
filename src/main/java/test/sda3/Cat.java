@@ -1,16 +1,19 @@
 package test.sda3;
 
-public class Cat implements Animals {
+import lombok.Getter;
+
+@Getter
+public class Cat implements Animals, Movable {
 
     private String catsname;
-    private String eatMouse;
 
-    public Cat(String catsname, String eatMouse) {
+
+    public Cat(String catsname) {
         this.catsname = catsname;
-        this.eatMouse = eatMouse;
     }
-    public static String eatMouse(){
-        return "aZjadłem X myszy";
+
+    public void eatMouse() {
+        System.out.println(this.catsname + " Zjadłem X myszy");
     }
 
 
@@ -18,5 +21,15 @@ public class Cat implements Animals {
     public String makeSound() {
 
         return this.catsname + " Maiu";
+    }
+
+    @Override
+    public String getName() {
+        return catsname;
+    }
+
+    @Override
+    public String move() {
+        return " ide";
     }
 }

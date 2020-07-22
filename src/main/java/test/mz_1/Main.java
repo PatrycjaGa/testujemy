@@ -5,10 +5,15 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        Address address = new Address("Słoneczna", "Warszawa", "Polska",1, 3);
         Person young = new Person();
+        young.setAddress(address);
         Person johny = new Person("Johny", "Bravo");
         Person ana = new Person("Ana", "Nowak", 25);
         Person old = new Person("old", "Japan", 135);
+        johny.setAddress(address);
+        ana.setAddress(address);
+        old.setAddress(address);
 
         List<Person> listOfPerson = new ArrayList<>();
         listOfPerson.add(young);

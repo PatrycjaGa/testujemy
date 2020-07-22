@@ -5,16 +5,30 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        Cat bruenk  = new Cat("Bruno", Cat.eatMouse());
-        Cat filemon  = new Cat("Filemon", Cat.eatMouse());
-        Cat bonifacy  = new Cat("Bonifacy", Cat.eatMouse());
-        ArrayList<Animals> lisOfCats = new ArrayList<Animals>();
-        lisOfCats.add(bruenk);
-        lisOfCats.add(filemon);
-        lisOfCats.add(bonifacy);
+        Cat bruenk  = new Cat("Bruno");
+        Cat filemon  = new Cat("Filemon");
+        Cat bonifacy  = new Cat("Bonifacy");
+        Dog burek = new Dog("Burek");
+        Dog szarik = new Dog("Szarik");
 
-        for (Animals animal : lisOfCats){
+        Vet vet = new Vet();
+        System.out.println(vet.sayHello(bonifacy));
+
+        ArrayList<Animals> lisOfAnimals = new ArrayList<Animals>();
+        lisOfAnimals.add(bruenk);
+        lisOfAnimals.add(filemon);
+        lisOfAnimals.add(bonifacy);
+        lisOfAnimals.add(burek);
+        lisOfAnimals.add(szarik);
+
+        bonifacy.eatMouse();
+        System.out.println(bonifacy.move());
+
+
+
+        for (Animals animal : lisOfAnimals){
             System.out.println(animal.makeSound());
+
         }
 
     }
