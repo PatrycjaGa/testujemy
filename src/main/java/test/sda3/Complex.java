@@ -9,12 +9,9 @@ public class Complex {
     private Integer Im;
     private String i;
 
-    public Complex(String i) {
-        this.i = i;
-    }
-
-    public Complex(Integer re, Integer im) {
+    public Complex(Integer re, Integer im, String i) {
         Re = re;
         Im = im;
+        this.i = i;
     }
 }
